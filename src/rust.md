@@ -1,4 +1,4 @@
-# Rust Reference
+# Rust quick reference
 
 ## Printing
 Several facilities for printing are provided by the platform and by the course template. The simplest way to print is through the `print64` macro exported in `print.rs`. The `print64` and `println64` macros prints a maximum of 64 characters per call using standard Rust format print. Alternatively, you could call `xil::xil_printf` of the C-FFI to use the Xilinx version of the standard `printf` C-interface and C format strings. Using this interface, however, requires you to use nul-terminated strings like `"Hello World!\0"`.

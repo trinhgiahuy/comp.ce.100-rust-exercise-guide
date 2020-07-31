@@ -1,7 +1,12 @@
 # Setup
 
+## Summary
+
+On this page, we'll set up the workspace such that a native Rust baremetal application can be run on the PYNQ-Z1 device.
 
 ## Board template
+
+- TODO: this may be optional
 
 Follow the main exercise guide until the project is set up, **or** do the following:
 
@@ -12,16 +17,14 @@ Follow the main exercise guide until the project is set up, **or** do the follow
     * make sure the PYNQ-Z1 board is turned on and connected,
     * right click on "Embedded_exercise", and select "Run As -> Launch on Hardware (System Debugger)".
 
-While the Rust version of the coursework can be completed without using the Xilinx SDK, you will need it to gain access to the Xilinx® Software Command-Line tool (`xsct`). `xsct` will be used to run a script to reset the Pynq-Z1 board, program the FPGA on it, and upload a baremetal application onto the processor. Xilinx SDK comes pre-installed on the computers used for the course work.
+## Rust project work template
 
+- Download or clone the [project work template]().
 
-## Install Rust and cross-compiler
+## Install Rust and the cross-compiler toolchain
 
 - Go to [rustup.rs](https://rustup.rs/) and follow the instructions.
-- Install the nightly toolchain `rustup install nightly`.
+- Install the nightly toolchain `rustup install nightly`. We need the nightly toolchain to compile a line of assembly to enable interrupts via a `libxil` C-FFI library.
 - Set the nightly toolchain as the default in the project directory `rustup override set nightly` (do this from within the project directory).
 - Install the cross-compiler by running `rustup target add arm-none-eabi` on the command line.
 
-
-## Rust project work template
-- Download or clone the [project work template]().
