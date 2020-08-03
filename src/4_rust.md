@@ -1,7 +1,26 @@
 # Rust quick reference
 
 ## Printing
-Several facilities for printing are provided by the platform and by the course template. The simplest way to print is through the `print64` macro exported in `print.rs`. The `print64` and `println64` macros prints a maximum of 64 characters per call using standard Rust format print. Alternatively, you could call `xil::xil_printf` of the C-FFI to use the Xilinx version of the standard `printf` C-interface and C format strings. Using this interface, however, requires you to use nul-terminated strings like `"Hello World!\0"`.
+Several facilities for printing are provided by the platform and by the course template. The simplest way to print is through the `print64` and `println64` macros exported in `print.rs`:
+
+```rs
+println64!("Hello World from Rust!");
+
+println64!("This is an integer: {}.", 42);
+```
+
+The `print64` and `println64` macros print a maximum of 64 characters per call using Rust style format. Alternatively, you could call `xil::xil_printf` of the C-FFI to use the Xilinx version of the standard `printf` C-interface and C format strings:
+
+```rs
+unsafe {
+    xil::xil_printf("Hello World via xil_printf\0".as_ptr());
+
+    xil::xil_printf("This is an integer: %d".as_ptr(), 42);
+}
+```
+
+As shown above, using this interface requires you to use raw pointers, unsafe and nul-terminated strings like so `"Hello World!\0"`, but it gets rid of the 64 bit limitation.
+
 
 ## Unsafe
 Unsafe blocks `unsafe {}` are used to wrap whatever code that the compiler cannot verify to not contain certain kinds of errors. Examples of code that needs to be wrapped in `unsafe {}` are:
