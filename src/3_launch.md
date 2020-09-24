@@ -5,7 +5,7 @@
 
 `cargo build`
 
-The project is configured to automatically run the `arm-none-eabi` cross-compilation toolchain.
+The project is configured to automatically run the `armv7a-none-eabi` cross-compilation toolchain.
 
 ## Open an input-output interface to the board
 In this exercise, we're going to open an UART over USB connection to the board. This allows us to see the output of our print statements. Guide to opening UART over USB is provided for Windows
@@ -20,12 +20,12 @@ In this exercise, we're going to open an UART over USB connection to the board. 
 - A successful connection will result in an idle PuTTY window.
 
 ## Set up xsct
-- Open an `xsct` terminal (ie. look for Xilinx Software Command Line Tool in the Windows menu)
+- Open an `xsct` terminal (ie. look for "Xilinx Software Command Line Tool" in the Windows menu)
 - Navigate to the project directory using `cd` and `dir`:
     * `cd path/to/project`
 
 ## Upload the application onto the processor
-- Use the supplied tickle-script to initialize and run the application on the board:
+- Use the supplied tickle-script to initialize the board and run the application:
     * `source run_on_pynq.tcl`
 - The program should now print something on a connected PuTTY terminal.
-- Feel free to look inside to see what `xsct` is doing (reset, program, upload, ...).
+- Feel free to look inside "run_on_pynq.tcl" to see what `xsct` is doing (reset, program, upload, ...).

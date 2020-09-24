@@ -1,5 +1,4 @@
 # Todo
 
 ## TODO
-- [ ] Upload the pre-built BSP repository
-- [ ] Set up debugging (sa. exercise guide)
+- [ ] Set up debugging support (sa. exercise guide)

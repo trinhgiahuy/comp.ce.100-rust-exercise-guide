@@ -6,17 +6,15 @@ On this page, we'll set up the workspace such that a native Rust baremetal appli
 
 ## Rust project work template
 
-Download or clone the [project work template]()
-
-`git clone ...`
+Download or clone the work template. For the autumn  implementation of 2020, the work template is available in Moodle.
 
 ### Install Rust and the cross-compiler toolchain
+
+These instructions are also available in the project template.
 
 1. Go to [rustup.rs](https://rustup.rs/) and follow the instructions.
 2. Install the nightly toolchain
     * `rustup install nightly`
-    * We need the nightly toolchain to compile a line of assembly to enable interrupts via a `libxil` C-FFI library.
+    * We need the nightly toolchain to be able to compile a single line of assembly to enable interrupts via the `libxil` C-FFI library.
 3. Set the nightly toolchain as the default in the project directory `rustup override set nightly` (do this from within the project directory).
 4. Install the cross-compiler by running `rustup target add arm-none-eabi` on the command line.
-
-These instructions are also available in the project template.

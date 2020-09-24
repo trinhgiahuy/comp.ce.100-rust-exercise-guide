@@ -2,7 +2,11 @@
 
 ## Motivation and structure
 
-For the purposes of this course it might be useful to make a really high-level comparison between C and Rust. C is a standard tool in embedded and low-level programming. More than 50 years of history have seen it become abundant, omni-present, in the (more or less) thin layer of software between metal and other software. Rust, on the other hand, was created in the last 10 years. Rust aims to keep what's good with C, and add that which helps make more complex systems more programmable. Much like C and assembly, Rust and C are designed to interoperate, and we are going to take a deep dive into that matter in this course work.
+Here's a really high-level comparison between C and Rust:
+
+C is a standard tool in embedded and low-level programming. More than 50 years of history have seen it become abundant, omni-present, in the (more or less) thin layer of software between metal and other software.
+
+Rust, on the other hand, was created in the last 10 years. Rust aims to keep what's good with C, discard what's no longer useful, and add that which helps make more complex systems more programmable. Much like C and assembly, Rust and C are designed to interoperate, and we are going to take a deep dive into that matter in this course work.
 
 But since you're already here, I won't spend more time discussing ["Why Rust?"](https://doc.rust-lang.org/book/foreword.html)
 

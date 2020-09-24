@@ -19,7 +19,7 @@ unsafe {
 }
 ```
 
-As shown above, using this interface requires you to use raw pointers, unsafe and nul-terminated strings like so `"Hello World!\0"`, but it gets rid of the 64 bit limitation.
+As shown above, using this interface requires you to use raw pointers, unsafe and nul-terminated strings like so `"Hello World!\0"`, but it gets rid of the 64 byte limitation.
 
 
 ## Unsafe
@@ -28,10 +28,10 @@ Unsafe blocks `unsafe {}` are used to wrap whatever code that the compiler canno
 - dereferencing a raw-pointer (`*ptr`),
 - call a function in `C`, eg. almost anything in the `xil_sys` / `xil` crate.
 
-Runtime errors will mostly occur in `unsafe {}` blocks.
+Runtime errors will mostly occur inside of `unsafe {}` blocks.
 
 ### Usage example
-```
+```rs
 unsafe {
     xil::Xil_ExceptionEnable();
 }
@@ -40,7 +40,9 @@ unsafe {
 
 ## Creating bindings to physical memory addresses
 
-```const TEST: *mut u8 = 0x1234 as *mut u8;```
+```rs
+const TEST: *mut u8 = 0x1234 as *mut u8;
+```
 
 This line creates a constant pointer to an 8-bit value in a particular memory address (0x1234);
 
@@ -48,11 +50,15 @@ This line creates a constant pointer to an 8-bit value in a particular memory ad
 ## Pointer access
 Since the Rust standard library (std) is not available on the Cortex-A9, we use `core` versions of pointer operations. To read a pointer at an `address`, use
 
-```let value: *const u8 = core::ptr::read_volatile( address );```,
+```rs
+let value: *const u8 = core::ptr::read_volatile( address );
+```
 
 to write a value at an `address`, use
 
-```core::ptr::write_volatile( address, value );```.
+```rs
+core::ptr::write_volatile( address, value );
+```
 
 
 ## Xilinx functions
