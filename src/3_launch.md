@@ -14,7 +14,7 @@ In this exercise, we're going to open an UART over USB connection to the board. 
 - Open the Windows Device Manager, and visually monitor the "Ports (COM & LPT)" section. Connect the board to the computer using the supplied micro-USB cable (sa. main exercise guide) and take note of which serial line the device gets connected to in the device manager, eg. USB Serial Port (COM5). In this case, the serial line would be "COM5".
 - Open PuTTY, and select the following settings:
     * connection type: serial,
-    * serial line: COM5,
+    * serial line: COM5 (yours maybe different, see device manager),
     * speed: 115200.
 - You may optionally save the configuration by typing a name into the "Saved Sessions" field and pressing 'Save'.
 - A successful connection will result in an idle PuTTY window.
