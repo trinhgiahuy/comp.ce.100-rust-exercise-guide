@@ -10,7 +10,7 @@ Rust, on the other hand, was created in the last 10 years. Rust aims to keep wha
 
 But since you're already here, I won't spend more time discussing ["Why Rust?"](https://doc.rust-lang.org/book/foreword.html)
 
-This guide will help you get set up with everything required to run the exercise template on a Windows computer prepared by the course staff, or a personal Linux computer. At the end of the guide there will be some helpful hints on how to do things on embedded Rust.
+This guide will help you get set up with everything required to run the exercise template on a Windows computer prepared by the course staff, or a personal Linux computer. At the end of the guide there will be some helpful hints on how to do things on embedded Rust ([Rust quick reference](./4_rust.md)).
 
 ## This guide will not discuss...
 ... the following topics, for which you should refer to the main exercise guide:
