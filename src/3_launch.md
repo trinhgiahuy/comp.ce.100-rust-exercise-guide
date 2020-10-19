@@ -11,7 +11,7 @@ The project is configured to automatically run the `armv7a-none-eabi` cross-comp
 In this exercise, we're going to open an UART over USB connection to the board. This allows us to see the output of our print statements. Guide to opening UART over USB is provided for Windows
 
 ### Windows
-- Open the Windows Device Manager, and visually monitor the "Ports (COM & LPT)" section. Connect the board to the computer using the supplied micro-USB cable (sa. main exercise guide) and take note of which serial line the device gets connected to in the device manager, eg. USB Serial Port (COM5). In this case, the serial line would be "COM5".
+- Open the Windows Device Manager, and visually monitor the "Ports (COM & LPT)" section. Connect the board to the computer using the supplied micro-USB cable (sa. main exercise guide), then **turn on the device**, and then take note of which serial line the device gets connected to in the device manager, eg. USB Serial Port (COM5). In this case, the serial line would be "COM5".
 - Open PuTTY, and select the following settings:
     * connection type: serial,
     * serial line: COM5 (yours maybe different, see device manager),
