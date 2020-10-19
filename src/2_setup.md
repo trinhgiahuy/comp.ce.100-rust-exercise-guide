@@ -17,4 +17,4 @@ These instructions are also available in the project template.
     * `rustup install nightly`
     * We need the nightly toolchain to be able to compile a single line of assembly to enable interrupts via the `libxil` C-FFI library.
 3. Set the nightly toolchain as the default in the project directory `rustup override set nightly` (do this from within the project directory).
-4. Install the cross-compiler by running `rustup target add arm-none-eabi` on the command line.
+4. Install the cross-compiler by running `rustup target add armv7a-none-eabi` on the command line.
