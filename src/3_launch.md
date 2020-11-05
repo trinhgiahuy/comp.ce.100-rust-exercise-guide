@@ -3,6 +3,11 @@
 
 ## Build the application
 
+1. The build currently depends on the Xilinx toolchain. The build tools may detect it automatically, but if not:
+   * (Linux-like terminals, e.g. Git Bash, WSL, and Linux terminals) `export /path/to/Xilinx/SDK/version`.
+   * (Windows-like terminals, e.g. PowerShell) `$Env:XILINX_SDK = "path/to/Xilinx/SDK/version"`.
+   * e.g. on Git Bash at TC219 class computers: `export XILINX_SDK="C:/Apps/Xilinx_Vivado2017/SDK/2017.2"`.
+
 `cargo build`
 
 The project is configured to automatically run the `armv7a-none-eabi` cross-compilation toolchain.
