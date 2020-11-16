@@ -2,7 +2,7 @@
 This is an auxiliary book provided as support material with the Rust exercise on COMP.CE.100.
 
 ## Setup & Reading
-To view the contents of the book, you can either read the sources in src/, or you can read the rendered version on your browser using `mdbook`. `mdbook` can be set up as follows:
+To view the contents of the book, you can either read the sources by clicking on the "src/" directory above, or you can read the rendered version on your browser using `mdbook`. `mdbook` can be set up as follows:
 
 1. Install [the Rust toolchain](https://rustup.rs/) unless already installed.
 2. Install mdbook: run `cargo install mdbook` on a command line.
