@@ -1,7 +1,10 @@
-# Rust quick reference
+# Rust things of note
 
 ## Printing
-Several facilities for printing are provided by the platform and by the course template. The simplest way to print is through the `print64` and `println64` macros exported in `print.rs`:
+
+Like in the C-version, we must use a platform provided implementation of the print-functionality.
+
+Several facilities for printing are provided by the course template. The simplest way to print is through the `print64` and `println64` macros exported in `print.rs`:
 
 ```rs
 println64!("Hello World from Rust!");
@@ -35,29 +38,6 @@ Runtime errors will mostly occur inside of `unsafe {}` blocks.
 unsafe {
     xil::Xil_ExceptionEnable();
 }
-```
-
-
-## Creating bindings to physical memory addresses
-
-```rs
-const TEST: *mut u8 = 0x1234 as *mut u8;
-```
-
-This line creates a constant pointer to an 8-bit value in a particular memory address (0x1234);
-
-
-## Pointer access
-Since the Rust standard library (std) is not available on the Cortex-A9, we use `core` versions of pointer operations. To read a pointer at an `address`, use
-
-```rs
-let value: *const u8 = core::ptr::read_volatile( address );
-```
-
-to write a value at an `address`, use
-
-```rs
-core::ptr::write_volatile( address, value );
 ```
 
 

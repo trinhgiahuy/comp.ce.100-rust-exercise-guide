@@ -1,10 +1,12 @@
 # Summary
 
 - [Introduction](./1_introduction.md)
-- [Setup](./2_setup.md)
-- [Running the application on-device](./3_launch.md)
-- [Rust quick reference](./4_rust.md)
-- [Links to resources](./links.md)
-- [Xilinx tools](./install-xilinx.md)
+- [Build & Run](./2_build-and-run.md)
+- [Exercise Guide](./3_exercise-guide.md)
+- [Rust Things of Note](./4_rust.md)
 
-- [Todo](./todo.md)
+[Setup](./setup.md)
+[Xilinx tools](./install-xilinx.md)
+[Links to resources](./links.md)
+
+[Todo](./todo.md)

@@ -1,6 +1,11 @@
 # Introduction
 
-## Motivation and structure
+This guide will help you implement an alien shooter demo application on COMP.CE.100 Introduction to Embedded Systems. The guide is aimed at your average second year IT student at Tampere University. First, we will cover [how to build and run](./2_build-and-run.md) the application template on PYNQ-Z1. Then we will cover the topics related to writing Rust code. Finally, there's instructions on [how to set up](./setup.md) and get started on a platform that's not maintained by the course staff (e.g. a personal computer).
+
+The guide is written to be read "in-order" like a book, but if you need to set up your own computer, skip to [how to set up](./setup.md).
+
+
+## Motivation
 
 Here's a really high-level comparison between C and Rust:
 
@@ -10,7 +15,6 @@ Rust, on the other hand, was created in the last 10 years. Rust aims to keep wha
 
 But since you're already here, I won't spend more time discussing ["Why Rust?"](https://doc.rust-lang.org/book/foreword.html)
 
-This guide will help you get set up with everything required to run the exercise template on a Windows computer prepared by the course staff, or a personal Linux computer. At the end of the guide there will be some helpful hints on how to do things on embedded Rust ([Rust quick reference](./4_rust.md)).
 
 ## This guide will not discuss...
 ... the following topics, for which you should refer to the main exercise guide:
@@ -18,5 +22,5 @@ This guide will help you get set up with everything required to run the exercise
 * board configuration (Development environment tutorial / Board),
 * interrupt configurations,
 * important memory addresses and bit order,
-* led matrix driver explanation,
+* led matrix driver,
 * reference on course provided function templates (also provided in Rust).
