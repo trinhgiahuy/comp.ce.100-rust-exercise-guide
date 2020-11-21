@@ -4,10 +4,6 @@
 
 On this page, we'll set up the workspace such that a native Rust baremetal application can be run on the PYNQ-Z1 device.
 
-## Rust project work template
-
-Download or clone the work template. For the autumn  implementation of 2020, the work template is available in Moodle.
-
 ### Install Rust and the cross-compiler toolchain
 
 These instructions are also available in the project template.

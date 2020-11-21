@@ -1,12 +1,18 @@
 # Summary
 
-- [Introduction](./1_introduction.md)
-- [Build & Run](./2_build-and-run.md)
-- [Exercise Guide](./3_exercise-guide.md)
-- [Rust Things of Note](./4_rust.md)
+1. [Introduction](./1_introduction.md)
+2. [Build & Run](./2_build-and-run.md)
+3. [Exercise Guide](./3_exercise-guide/0_exercise-guide.md)
+    - [Register Access](./3_exercise-guide/1_register-access.md)
+    - [Special Integer Types](./3_exercise-guide/2_bit-width.md)
+    - [Leds-Array](./3_exercise-guide/3_leds-array.md)
+    - [Match-Statements](./3_exercise-guide/4_match.md)
+    - [Other Things of Note](./3_exercise-guide/5_rust.md)
 
-[Setup](./setup.md)
-[Xilinx tools](./install-xilinx.md)
+4. [Environment Setup](./4_setup-environment/0_setup-environment.md)
+    - [Setup](./4_setup-environment/1_setup.md)
+    - [Xilinx Tools](./4_setup-environment/2_install-xilinx.md)
+
 [Links to resources](./links.md)
 
 [Todo](./todo.md)

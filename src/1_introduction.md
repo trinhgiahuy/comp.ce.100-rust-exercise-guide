@@ -1,8 +1,8 @@
 # Introduction
 
-This guide will help you implement an alien shooter demo application on COMP.CE.100 Introduction to Embedded Systems. The guide is aimed at your average second year IT student at Tampere University. First, we will cover [how to build and run](./2_build-and-run.md) the application template on PYNQ-Z1. Then we will cover the topics related to writing Rust code. Finally, there's instructions on [how to set up](./setup.md) and get started on a platform that's not maintained by the course staff (e.g. a personal computer).
+This guide will help you implement an alien shooter demo application on COMP.CE.100 Introduction to Embedded Systems. The guide is aimed at your average second year IT student at Tampere University. First, we will cover [how to build and run](./2_build-and-run.md) the application template on PYNQ-Z1. Then we will cover the topics related to writing Rust code. Finally, there's instructions on [how to set up](./4_setup-environment.md) and get started on a platform that's not maintained by the course staff (e.g. a personal computer).
 
-The guide is written to be read "in-order" like a book, but if you need to set up your own computer, skip to [how to set up](./setup.md).
+The guide is written to be read "in-order" like a book, but if you need to set up your own computer, skip to [how to set up](./4_setup-environment.md).
 
 
 ## Motivation
