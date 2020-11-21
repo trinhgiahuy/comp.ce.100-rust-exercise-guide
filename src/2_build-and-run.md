@@ -19,6 +19,14 @@ Building and running a Rust application is usually as simple as invoking the mai
 
 ## Build the application
 
+Before we start, switch to the project directory in your terminal (e.g. Git Bash):
+
+`cd alien-shooter-template-rs`
+
+Then set the cross-compiler for this directory. We use Cortex-A9 v7 with "none" operating system and embedded application binary interface (EABI):
+
+`rustup target add armv7a-none-eabi`
+
 We're going to need to provide the location of the manufacturer's tools as an environment variable. Setting the environment variable is different on different types of terminals. **OBS:** Note that using Windows command prompt is not recommended. Here's The synopsis:
 
 | Terminal | Command |
@@ -29,7 +37,7 @@ We're going to need to provide the location of the manufacturer's tools as an en
 
 When the environment variable is set, we should be able to use:
 
-`cargo build`, to produce an executable file, that we can run on the PYNQ-Z1.
+`cargo build`, to produce an executable file that we can run on the PYNQ-Z1.
 
 For instance, at TC219 using on Git Bash and Vivado 2017.2:
 1. `export XILINX_SDK="C:/Apps/Xilinx_Vivado2017/SDK/2017.2"`

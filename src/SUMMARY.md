@@ -10,7 +10,7 @@
     - [Other Things of Note](./3_exercise-guide/5_rust.md)
 
 4. [Environment Setup](./4_setup-environment/0_setup-environment.md)
-    - [Setup](./4_setup-environment/1_setup.md)
+    - [Setup Rust & LLVM](./4_setup-environment/1_rust.md)
     - [Xilinx Tools](./4_setup-environment/2_install-xilinx.md)
 
 [Links to resources](./links.md)
