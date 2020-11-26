@@ -5,10 +5,10 @@ Let's get started. Register access in Rust is more complicated than in C. Please
 
 ### C
 
-In C, you would first declare the register access using 8 hexadecimal numbers, representing a 64-bit address to an 8-bit value like so:
+In C, you might declare a macro with an 8-character hexadecimal, representing a 64-bit memory address, that is then cast into a 64-bit pointer to an 8-bit value, like so:
 
 ```c
-#define ADDRESS *(uint8_t*) 0x42010002
+#define ADDRESS (uint8_t*) 0x42010002
 ```
 
 Then you'd perhaps define a particular combination of bits to help setting a particular bit in the 8-bit register value:
