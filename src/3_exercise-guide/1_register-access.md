@@ -17,7 +17,7 @@ Then you'd perhaps define a particular combination of bits to help setting a par
 #define A_BIT 0b00000001
 ```
 
-And finally, you might set the value in the register by first de-referencing, and then using a bitwise OR to set the particular bit:
+And finally, you might set the value in the register by first looking up the pointer with `*`, and then using a bitwise OR to set the particular bit:
 
 ```c
 *ADDRESS |= A_BIT;
