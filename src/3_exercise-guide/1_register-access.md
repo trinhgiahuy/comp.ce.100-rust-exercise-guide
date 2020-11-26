@@ -5,7 +5,7 @@ Let's get started. Register access in Rust is more complicated than in C. Please
 
 ### C
 
-In C, you would first declare the register access using a 8 hexadecimal numbers, representing a 64-bit address to an 8-bit value like so:
+In C, you would first declare the register access using 8 hexadecimal numbers, representing a 64-bit address to an 8-bit value like so:
 
 ```c
 #define ADDRESS *(uint8_t*) 0x42010002
