@@ -5,7 +5,7 @@ Let's get started. Register access in Rust is more complicated than in C. Please
 
 ### C
 
-In C, you might declare a macro with an 8-character hexadecimal, representing a 64-bit memory address, that is then cast into a 64-bit pointer to an 8-bit value, like so:
+In C, you might declare a macro with an 8-character hexadecimal, representing a 32-bit memory address, that is then cast into a 32-bit pointer to an 8-bit value, like so:
 
 ```c
 #define ADDRESS (uint8_t*) 0x42010002
@@ -25,7 +25,7 @@ And finally, you might set the value in the register by first looking up the poi
 
 ### Rust
 
-In Rust, you'd first declare the 64-bit address to an 8-bit value and the bit combination as constant globals like so:
+In Rust, you'd first declare the 32-bit address to an 8-bit value and the bit combination as constant globals like so:
 
 ```rs
 const ADDRESS: *mut u8 = 0x42010002 as *mut u8;
@@ -34,13 +34,13 @@ const A_BIT: u8 = 0b00000001;
 
 Now's the complicated part. Rust doesn't allow direct register access, and the compiler is more aggressive at optimizing. That's why we must use a set of method designed for register access, called `core::ptr::read_volatile` and `core::ptr::write_volatile`.
 
-First, we must retrieve the 64-bit pointer to the 8-bit value into a **mutable binding**:
+First, we must retrieve the 32-bit pointer to the 8-bit value into a **mutable binding**:
 
 ```rs
 let value: *mut u8 = core::ptr::read_volatile( ADDRESS );
 ```
 
-Then we must flip the bit, and write back into the register at the end of the 64-bit pointer:
+Then we must flip the bit, and write back into the register at the end of the 32-bit pointer:
 
 ```rs
 value |= A_BIT;
