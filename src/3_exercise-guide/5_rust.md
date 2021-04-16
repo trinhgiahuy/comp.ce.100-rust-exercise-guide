@@ -18,7 +18,7 @@ The `print64` and `println64` macros print a maximum of 64 characters per call u
 unsafe {
     xil::xil_printf("Hello World via xil_printf\0".as_ptr());
 
-    xil::xil_printf("This is an integer: %d".as_ptr(), 42);
+    xil::xil_printf("This is an integer: %d\0".as_ptr(), 42);
 }
 ```
 
