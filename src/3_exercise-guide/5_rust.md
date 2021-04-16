@@ -27,9 +27,8 @@ As shown above, using this interface requires you to use raw pointers, unsafe an
 
 ## Unsafe
 Unsafe blocks `unsafe {}` are used to wrap whatever code that the compiler cannot verify to not contain certain kinds of errors. Examples of code that needs to be wrapped in `unsafe {}` are:
-- reading from or writing to an arbitrary physical memory address,
-- dereferencing a raw-pointer (`*ptr`),
-- call a function in `C`, eg. almost anything in the `xil_sys` / `xil` crate.
+- reading from or writing to an arbitrary physical memory address or dereferencing a raw-pointer (`*ptr`),
+- calling a function in `C`, eg. almost anything in the `xil_sys` / `xil` crate.
 
 Runtime errors will mostly occur inside of `unsafe {}` blocks.
 
