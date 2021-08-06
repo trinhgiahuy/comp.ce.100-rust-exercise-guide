@@ -32,7 +32,7 @@ const ADDRESS: *mut u8 = 0x42010002 as *mut u8;
 const A_BIT: u8 = 0b00000001;
 ```
 
-Now's the complicated part. Rust doesn't allow direct register access, and the compiler is more aggressive at optimizing. That's why we must use a set of method designed for register access, called `core::ptr::read_volatile` and `core::ptr::write_volatile`.
+Now's the complicated part. Rust doesn't allow direct register access, and the compiler is more aggressive at optimizing. That's why we must use a set of methods designed for register access, called `core::ptr::read_volatile` and `core::ptr::write_volatile`.
 
 First, we must retrieve the 32-bit pointer to the 8-bit value into a **mutable binding**:
 
