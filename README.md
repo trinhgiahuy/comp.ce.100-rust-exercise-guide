@@ -8,3 +8,5 @@ To view the contents of the book, you can either read the sources by clicking on
 2. Install mdbook: run `cargo install mdbook` on a command line.
 3. Serve the book at localhost: run `mdbook serve` in this directory.
 4. Navigate to "http://localhost:3000/" on your browser.
+
+<!--- This line test SSH connection --->
